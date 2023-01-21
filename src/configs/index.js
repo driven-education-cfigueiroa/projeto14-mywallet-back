@@ -4,7 +4,7 @@ import { MongoClient } from 'mongodb';
 dotenv.config();
 
 const mongoClient = new MongoClient(
-  process.env.DATABASE_URL || 'mongodb://localhost:27017'
+  process.env.DATABASE_URL || 'mongodb://localhost:27017/mywallet-api'
 );
 
 try {
